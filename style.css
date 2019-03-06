@@ -1,0 +1,95 @@
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    background: #5aab63;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Julius Sans One', sans-serif;
+}
+  
+h1 {
+    text-align: center;
+    font-size: 78px;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.btn-container {
+    margin: 0 auto;
+    width: 100px;
+    height: 50px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 22px;
+    color: #000000;
+    border: solid 1px #514c4c;
+    border-radius: 16px;
+    background-color: rgba(255,255,255,0.2);
+    -webkit-box-shadow: 0px 0px 32px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 32px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 32px -1px rgba(0,0,0,0.75);
+}
+
+button:hover{
+    background-color: #137c35;
+}
+  
+.score {
+    background: rgba(255,255,255,0.2);
+    padding: 0 48px;
+    line-height: 1;
+    border-radius: 16px;
+ }
+  
+.game-wrapper {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+  
+.hole {
+    flex: 1 0 33.33%;
+    overflow: hidden;
+    position: relative;
+}
+  
+.hole:after {
+    display: block;
+    background: url(dirt2.svg) bottom center no-repeat;
+    background-size: contain;
+    content: '';
+    width: 100%;
+    height:101px;
+    position: absolute;
+    z-index: 2;
+    bottom: -30px;
+}
+  
+.mole {
+    background: url('mole.svg') bottom center no-repeat;
+    background-size: 60%;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition:all 0.4s;
+}
+  
+.hole.up .mole {
+    top: 0;
+}
+  
