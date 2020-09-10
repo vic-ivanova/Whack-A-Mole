@@ -1,3 +1,3 @@
 # Whack-A-Mole
 
-Simple game - Whack A Mole, using HTML/CSS/JS
+Game app - Whack A Mole
